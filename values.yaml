@@ -41,6 +41,7 @@ service:
   port: 8080
 
 ingress:
+  enabled: true
   className: ""
   hosts:
     - host: local.k3s
