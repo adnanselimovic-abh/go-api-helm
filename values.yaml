@@ -41,6 +41,8 @@ service:
   port: 80
 
 ingress:
+  annotations:
+    traefik.ingress.kubernetes.io/router.middlewares: go-api-go-api-prefix@kubernetescrd
   enabled: true
   className: ""
   hosts:
